@@ -1,3 +1,7 @@
+# Matomo analytics in your Laravel Nova dashboard
+
+![Preview](https://raw.githubusercontent.com/adeweb-be/laravel-nova-matomo-cards/master/.github/demo.png)
+
 
 ## Installation
 
