@@ -57,10 +57,12 @@ use Adeweb\NovaMatomoCards\Cards\UniqueVisitorsPerDayTrend;
             (new LastMonthPageByVisitorList())->width('1/2'),
         ];
     }
+    
+```
 
 In your .env file : 
 
-```
+```env
 MATOMO_API_TOKEN="[Your Matomo API token]"
 MATOMO_API_URL="[Your Matomo instance URL]"
 MATOMO_API_SITE_ID="[Your Matomo Site ID]"
