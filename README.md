@@ -4,10 +4,8 @@
 You can install the package via composer:
 
 ```bash
-composer require /nova-matomo-cards
+composer require adeweb/laravel-nova-matomo-cards
 ```
-
-You can publish and run the migrations with:
 
 You can publish the config file with:
 ```bash
@@ -24,7 +22,7 @@ return [
 ];
 ```
 
-Note: It is better to use ENV variables than publish and edit the config file.
+Note: It is better to use ENV variables than publishing and editing the config file.
 
 ## Usage
 In NovaServiceProvider.php :
@@ -59,8 +57,14 @@ use Adeweb\NovaMatomoCards\Cards\UniqueVisitorsPerDayTrend;
             (new LastMonthPageByVisitorList())->width('1/2'),
         ];
     }
-```
 
+In your .env file : 
+
+```
+MATOMO_API_TOKEN="[Your Matomo API token]"
+MATOMO_API_URL="[Your Matomo instance URL]"
+MATOMO_API_SITE_ID="[Your Matomo Site ID]"
+```
 
 ## Testing
 
