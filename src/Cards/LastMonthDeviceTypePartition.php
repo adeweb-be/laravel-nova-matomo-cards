@@ -10,7 +10,7 @@ class LastMonthDeviceTypePartition extends Partition
 {
     public function name()
     {
-        return __('nova_matomo_cards.Last month visitor device types');
+        return __('nova_matomo_cards::messages.Last month visitor device types');
     }
     /**
      * Calculate the value of the metric.

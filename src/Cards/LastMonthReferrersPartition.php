@@ -10,7 +10,7 @@ class LastMonthReferrersPartition extends Partition
 {
     public function name()
     {
-        return __('nova_matomo_cards.Last month website accessed from');
+        return __('nova_matomo_cards::messages.Last month website accessed from');
     }
 
     /**

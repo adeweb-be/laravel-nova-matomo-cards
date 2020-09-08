@@ -10,7 +10,7 @@ class UniqueVisitorsCount extends Value
 {
     public function name()
     {
-        return __('nova_matomo_cards.Unique visitors count');
+        return __('nova_matomo_cards::messages.Unique visitors count');
     }
 
     /**
@@ -34,9 +34,9 @@ class UniqueVisitorsCount extends Value
     public function ranges()
     {
         return [
-            'day' => __('nova_matomo_cards.Last day'),
-            'week' => __('nova_matomo_cards.Last week'),
-            'month' => __('nova_matomo_cards.Last month'),
+            'day' => __('nova_matomo_cards::messages.Last day'),
+            'week' => __('nova_matomo_cards::messages.Last week'),
+            'month' => __('nova_matomo_cards::messages.Last month'),
         ];
     }
 

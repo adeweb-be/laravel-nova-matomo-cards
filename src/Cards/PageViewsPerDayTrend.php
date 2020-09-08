@@ -11,7 +11,7 @@ class PageViewsPerDayTrend extends Trend
 {
     public function name()
     {
-        return __('nova_matomo_cards.Page views per day');
+        return __('nova_matomo_cards::messages.Page views per day');
     }
 
     /**
@@ -35,10 +35,10 @@ class PageViewsPerDayTrend extends Trend
     public function ranges()
     {
         return [
-            '7' => __('nova_matomo_cards.Last 7 Days'),
-            '14' => __('nova_matomo_cards.Last 14 Days'),
-            '30' => __('nova_matomo_cards.Last 30 Days'),
-            '60' => __('nova_matomo_cards.Last 60 Days'),
+            '7' => __('nova_matomo_cards::messages.Last 7 Days'),
+            '14' => __('nova_matomo_cards::messages.Last 14 Days'),
+            '30' => __('nova_matomo_cards::messages.Last 30 Days'),
+            '60' => __('nova_matomo_cards::messages.Last 60 Days'),
         ];
     }
 

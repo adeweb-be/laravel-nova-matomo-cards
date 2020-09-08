@@ -1,0 +1,30 @@
+<?php
+
+return array (
+    'Last 12 hours' => 'Last 12 hours',
+    'Last 14 Days' => 'Last 14 Days',
+    'Last 1 hour' => 'Last 1 hour',
+    'Last 2 hours' => 'Last 2 hours',
+    'Last 30 days' => 'Last 30 days',
+    'Last 30 minutes' => 'Last 30 minutes',
+    'Last 60 Days' => 'Last 60 days',
+    'Last 6 hours' => 'Last 6 hours',
+    'Last 7 Days' => 'Last 7 days',
+    'Last day' => 'Last days',
+    'Last month' => 'Last month',
+    'Last month visitor device types' => 'Last month visitor device types',
+    'Last month website accessed from' => 'Last month website accessed from',
+    'Last week' => 'Last week',
+    'Live visitors count' => 'Live visitors count',
+    'Page views count' => 'Page views count',
+    'Page views per day' => 'Page views per day',
+    'Unique visitors count' => 'Unique visitors count',
+    'Unique visitors per day' => 'Unique visitors per day',
+    'From direct entry' => 'From direct entry',
+    'From campaigns' => 'From campaigns',
+    'From search engines' => 'From search engines',
+    'From social networks' => 'From social networks',
+    'From websites' => 'From websites',
+    'Top 5 cities by visitor' => 'Top 5 cities by visitor (last month)',
+    'Top 5 pages by visitor' => 'Top 5 pages by visitor (last month)'
+);

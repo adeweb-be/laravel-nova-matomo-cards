@@ -14,7 +14,7 @@ class LastMonthCitiesByVisitorCountList extends NovaListCard
     {
         parent::__construct();
         $this->withMeta([
-            'title' => __("Top 5 visitor cities"),
+            'title' => __("nova_matomo_cards::messages.Top 5 cities by visitor"),
         ]);
         $values = (new MatomoAPI())->getLastMonthVisitorsByCitiesList(5);
         $this->rows($values);

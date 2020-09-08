@@ -13,6 +13,8 @@ class NovaMatomoCardsServiceProvider extends ServiceProvider
                 __DIR__ . '/../config/nova-matomo-cards.php' => config_path('nova-matomo-cards.php'),
             ], 'config');
         }
+
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang/', 'nova_matomo_cards');
     }
 
     public function register()

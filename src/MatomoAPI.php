@@ -158,11 +158,11 @@ class MatomoAPI
         $result = reset($result);
 
         return [
-            __("nova_matomo_cards.From search engines") => $result["Referrers_visitorsFromSearchEngines"],
-            __("nova_matomo_cards.From social networks") => $result["Referrers_visitorsFromSocialNetworks"],
-            __("nova_matomo_cards.From direct entry") => $result["Referrers_visitorsFromDirectEntry"],
-            __("nova_matomo_cards.From websites") => $result["Referrers_visitorsFromWebsites"],
-            __("nova_matomo_cards.From campaigns") => $result["Referrers_visitorsFromCampaigns"],
+            __("nova_matomo_cards::messages.From search engines") => $result["Referrers_visitorsFromSearchEngines"],
+            __("nova_matomo_cards::messages.From social networks") => $result["Referrers_visitorsFromSocialNetworks"],
+            __("nova_matomo_cards::messages.From direct entry") => $result["Referrers_visitorsFromDirectEntry"],
+            __("nova_matomo_cards::messages.From websites") => $result["Referrers_visitorsFromWebsites"],
+            __("nova_matomo_cards::messages.From campaigns") => $result["Referrers_visitorsFromCampaigns"],
         ];
     }
 

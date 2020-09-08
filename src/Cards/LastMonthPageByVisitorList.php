@@ -14,7 +14,7 @@ class LastMonthPageByVisitorList extends NovaListCard
     {
         parent::__construct();
         $this->withMeta([
-            'title' => __("Top 5 pages"),
+            'title' => __("nova_matomo_cards::messages.Top 5 pages by visitor"),
         ]);
         $values = (new MatomoAPI())->getLastMonthPageByVisitorList(5);
         $this->rows($values);

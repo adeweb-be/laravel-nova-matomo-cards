@@ -15,7 +15,6 @@ return array (
     'Last month visitor device types' => 'Types d\'appareil des visiteurs du dernier mois',
     'Last month website accessed from' => 'Sources d\'accès du dernier mois',
     'Last week' => 'Dernière semaine',
-    'Last Week' => 'Dernière semaine',
     'Live visitors count' => 'Nombre de visiteurs en direct',
     'Page views count' => 'Nombre de pages vues',
     'Page views per day' => 'Nombre de pages vues par jour',
@@ -26,4 +25,6 @@ return array (
     'From search engines' => 'Depuis les moteurs de recherche',
     'From social networks' => 'Depuis les réseaux sociaux',
     'From websites' => 'Depuis les autres sites web',
+    'Top 5 cities by visitor' => 'Top 5 des villes par visiteur unique (mois dernier)',
+    'Top 5 pages by visitor' => 'Top 5 des pages par visiteur unique (mois dernier)'
 );

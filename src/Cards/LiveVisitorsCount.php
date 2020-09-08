@@ -10,7 +10,7 @@ class LiveVisitorsCount extends Value
 {
     public function name()
     {
-        return __('nova_matomo_cards.Live visitors count');
+        return __('nova_matomo_cards::messages.Live visitors count');
     }
 
     /**
@@ -34,11 +34,11 @@ class LiveVisitorsCount extends Value
     public function ranges()
     {
         return [
-            '30' => __('nova_matomo_cards.Last 30 minutes'),
-            '60' => __('nova_matomo_cards.Last 1 hour'),
-            '120' => __('nova_matomo_cards.Last 2 hours'),
-            '360' => __('nova_matomo_cards.Last 6 hours'),
-            '720' => __('nova_matomo_cards.Last 12 hours'),
+            '30' => __('nova_matomo_cards::messages.Last 30 minutes'),
+            '60' => __('nova_matomo_cards::messages.Last 1 hour'),
+            '120' => __('nova_matomo_cards::messages.Last 2 hours'),
+            '360' => __('nova_matomo_cards::messages.Last 6 hours'),
+            '720' => __('nova_matomo_cards::messages.Last 12 hours'),
         ];
     }
 
