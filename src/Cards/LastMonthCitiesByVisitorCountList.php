@@ -3,7 +3,6 @@
 namespace Adeweb\NovaMatomoCards\Cards;
 
 use Adeweb\NovaMatomoCards\MatomoAPI;
-use Laravel\Nova\Nova;
 use ThijsSimonis\NovaListCard\NovaListCard;
 
 class LastMonthCitiesByVisitorCountList extends NovaListCard

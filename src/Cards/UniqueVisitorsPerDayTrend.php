@@ -9,8 +9,8 @@ use Laravel\Nova\Metrics\TrendResult;
 
 class UniqueVisitorsPerDayTrend extends Trend
 {
-
-    public function name() {
+    public function name()
+    {
         return __('nova_matomo_cards.Unique visitors per day');
     }
 

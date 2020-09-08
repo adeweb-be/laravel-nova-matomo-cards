@@ -8,8 +8,8 @@ use Laravel\Nova\Metrics\Value;
 
 class UniqueVisitorsCount extends Value
 {
-
-    public function name() {
+    public function name()
+    {
         return __('nova_matomo_cards.Unique visitors count');
     }
 

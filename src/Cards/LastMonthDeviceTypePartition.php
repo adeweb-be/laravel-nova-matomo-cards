@@ -8,7 +8,8 @@ use Laravel\Nova\Metrics\Partition;
 
 class LastMonthDeviceTypePartition extends Partition
 {
-    public function name() {
+    public function name()
+    {
         return __('nova_matomo_cards.Last month visitor device types');
     }
     /**

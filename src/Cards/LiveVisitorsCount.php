@@ -8,7 +8,8 @@ use Laravel\Nova\Metrics\Value;
 
 class LiveVisitorsCount extends Value
 {
-    public function name() {
+    public function name()
+    {
         return __('nova_matomo_cards.Live visitors count');
     }
 

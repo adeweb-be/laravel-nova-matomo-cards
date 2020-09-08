@@ -3,7 +3,6 @@
 
 namespace Adeweb\NovaMatomoCards;
 
-
 use Illuminate\Support\Collection;
 
 class MatomoAPI
@@ -28,36 +27,42 @@ class MatomoAPI
         $this->query .= "&idSite=$this->siteId";
         $this->query .= "&format=JSON";
         $this->query .= "&token_auth=$this->token";
+
         return $this;
     }
 
     public function withMethod($method)
     {
         $this->query .= "&method=$method";
+
         return $this;
     }
 
     public function withDate($date)
     {
         $this->query .= "&date=$date";
+
         return $this;
     }
 
     public function withPeriod($period)
     {
         $this->query .= "&period=$period";
+
         return $this;
     }
 
     public function with($key, $value)
     {
         $this->query .= "&$key=$value";
+
         return $this;
     }
 
     public function fetch(): array
     {
         $fetched = file_get_contents($this->query);
+
         return json_decode($fetched, true);
     }
 
@@ -76,9 +81,10 @@ class MatomoAPI
         if (array_key_exists('nb_uniq_visitors', $result[$dateRanges[1]])) {
             $current = $result[$dateRanges[1]]['nb_uniq_visitors'];
         }
+
         return [
             'previous' => $previous,
-            'current' => $current
+            'current' => $current,
         ];
     }
 
@@ -97,9 +103,10 @@ class MatomoAPI
         if (array_key_exists('nb_actions', $result[$dateRanges[1]])) {
             $current = $result[$dateRanges[1]]['nb_actions'];
         }
+
         return [
             'previous' => $previous,
-            'current' => $current
+            'current' => $current,
         ];
     }
 
@@ -112,11 +119,13 @@ class MatomoAPI
             ->withPeriod('day')
             ->fetch();
         $trend = collect($result)->map(function ($item) {
-            if (array_key_exists('nb_uniq_visitors', $item))
+            if (array_key_exists('nb_uniq_visitors', $item)) {
                 return $item["nb_uniq_visitors"];
-            else
+            } else {
                 return 0;
+            }
         })->all();
+
         return $trend;
     }
 
@@ -129,11 +138,13 @@ class MatomoAPI
             ->withPeriod('day')
             ->fetch();
         $trend = collect($result)->map(function ($item) {
-            if (array_key_exists('nb_actions', $item))
+            if (array_key_exists('nb_actions', $item)) {
                 return $item["nb_actions"];
-            else
+            } else {
                 return 0;
+            }
         })->all();
+
         return $trend;
     }
 
@@ -161,9 +172,10 @@ class MatomoAPI
             ->withMethod('Live.getCounters')
             ->with('lastMinutes', $minutes)
             ->fetch();
-        if (!array_key_exists('visitors', $result[0])) {
+        if (! array_key_exists('visitors', $result[0])) {
             return 0;
         }
+
         return $result[0]['visitors'];
     }
 
@@ -192,7 +204,7 @@ class MatomoAPI
         $cities = collect(reset($result))->map(function ($item) {
             return [
                 "city_name" => $item["city_name"],
-                "nb_visits" => $item["nb_visits"]
+                "nb_visits" => $item["nb_visits"],
             ];
         })->take($count);
 
@@ -210,7 +222,7 @@ class MatomoAPI
         $pages = collect(reset($result))->map(function ($item) {
             return [
                 "label" => $item["label"],
-                "nb_visits" => $item["nb_visits"]
+                "nb_visits" => $item["nb_visits"],
             ];
         })->take($count);
 

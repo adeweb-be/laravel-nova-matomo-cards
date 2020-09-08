@@ -8,7 +8,8 @@ use Laravel\Nova\Metrics\Value;
 
 class PageViewsCount extends Value
 {
-    public function name() {
+    public function name()
+    {
         return __('nova_matomo_cards.Page views count');
     }
 

@@ -9,7 +9,8 @@ use Laravel\Nova\Metrics\TrendResult;
 
 class PageViewsPerDayTrend extends Trend
 {
-    public function name() {
+    public function name()
+    {
         return __('nova_matomo_cards.Page views per day');
     }
 
